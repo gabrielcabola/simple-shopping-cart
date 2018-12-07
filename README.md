@@ -17,7 +17,7 @@ $cart = new Cart([array $options]);
 | --------------- | -------- | ------------------------------------------------------------ |
 | prefix     | **string**  | Session name prefix       |
 
-## Add 
+# Add 
 ```php
 // Add a product
 $cart->add([object $product]);
@@ -31,7 +31,7 @@ $cart->add([object $product]);
 | extra     | **array**  | Do you can pass extra information like color, size and others    |
 
 
-## Change quantity
+# Change quantity
 ### More (up)
 ```php
 // Increase Item Quantity
@@ -50,35 +50,35 @@ $cart->downQuantity(id,amount);
 $cart->downQuantity(id);
 ```
 
-### Remove item
+# Remove item
 ```php
 // Decrease Item Quantity
 $cart->remove(id);
 ```
-### List all Itens
+# List all Itens
 ```php
 // List
 $cart->items();
 ```
-### Total of products
+# Total of products
 ```php
 // Get a integer number of distinct products in cart
 $cart->productsTotal();
 ```
-### Total of itens
+# Total of itens
 
 ```php
 // Get a integer number  of itens total in cart
 $cart->itemsTotal();
 ```
-### Total Amount of Cart
+# Total Amount of Cart
 
 ```php
 // Show total cost of cart
 $cart->sumTotal()
 ```
 
-### Clear Cart
+# Clear Cart
 ```php
 // Cleat entire Cart
 $cart->clearCart
