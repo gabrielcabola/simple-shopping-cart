@@ -47,7 +47,7 @@ class Cart
             }
            
             //get id from session
-        	$this->id = $options['prefix'] . md5((isset($_SERVER['HTTP_HOST'])) ? $_SERVER['HTTP_HOST'] : 'SSCart');
+            $this->id = $options['prefix'] . md5((isset($_SERVER['HTTP_HOST'])) ? $_SERVER['HTTP_HOST'] : 'SSCart');
            
             //init cart by session id
             $this->_init();
