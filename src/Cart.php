@@ -42,11 +42,13 @@ class Cart
       */
       public function __construct($options = ['prefix'=>'simple_cart_'])
     	{
-        		if (!session_id()) {
-        			session_start();
-        		}
+            if (!session_id()) {
+                  session_start();
+            }
+           
             //get id from session
-        		$this->id = $options['prefix'] . md5((isset($_SERVER['HTTP_HOST'])) ? $_SERVER['HTTP_HOST'] : 'SSCart');
+        	$this->id = $options['prefix'] . md5((isset($_SERVER['HTTP_HOST'])) ? $_SERVER['HTTP_HOST'] : 'SSCart');
+           
             //init cart by session id
             $this->_init();
 
@@ -55,7 +57,7 @@ class Cart
       /** PRODUCT OPERATIONS */
 
       /**
-       * ADD Item
+       * ADD 
        */
       public function add($request)
     	{
@@ -91,7 +93,7 @@ class Cart
       }
 
       /**
-       * Reduce Item quantity
+       * Reduce Item Quantity
        */
       public function downQuantity($id,$amount=1)
       {
@@ -119,11 +121,7 @@ class Cart
                 unset($this->items[$id]);
                 $this->set($this->items_prefix,$this->items);
            } return false;
-         }
-
-      /**
-       * ITENS
-       */
+       }
 
 
      /**
@@ -165,9 +163,11 @@ class Cart
         );
       }
 
+      
       /**
        * SESSION
        */
+      
       /**
        * Extract values from PHP session
        * @param key string
