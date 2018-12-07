@@ -56,7 +56,7 @@ class CartItem
           $this->id = $product->id;
           $this->name = $product->name;
           $this->price = $product->price;
-          $this->quantity = (preg_match('/^\d+$/', $product->quantity)) ? $product->quantity : 1;;
+          $this->quantity = (preg_match('/^\d+$/', $product->quantity)) ? $product->quantity : 1;
           $this->total_price = $this->quantity * $product->price;
           $this->extra = (isset($request->extra)) ? $request->extra : [];
     	}

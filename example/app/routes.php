@@ -75,7 +75,8 @@ switch ($request_uri[0])
     // Everything else
     default:
         header('HTTP/1.0 404 Not Found');
-        require $source.'404.php';
+        $view = '404.php';
+        require $source.'masterpage.php';
         break;
 }
 
@@ -91,7 +92,6 @@ function request_result($method)
 
 function redirect($url, $statusCode = 303)
 {
-
    header('Location: ' . $url, true, $statusCode);
    die();
 }
