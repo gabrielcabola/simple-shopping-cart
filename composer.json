@@ -1,0 +1,30 @@
+{
+    "name": "gabrielcabola/simple-shopping-cart",
+    "description": "Simple Shopping Cart in PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Cabola",
+            "email": "gabriel@cabola.com.br"
+        }
+    ],
+    "require": {
+       "php": ">=5.3"
+   },
+   "require-dev": {
+   },
+   "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+       "psr-4": {
+           "SSCart\\": "src/"
+       }      
+   },
+   "autoload-dev": {
+       "psr-4": {
+           "SSCart\\Tests\\": "tests/"
+       }
+   }
+}
