@@ -1,6 +1,8 @@
 # Simple-shopping-cart
 A simple shopping cart class in PHP 5.4.x
 
+![alt text](https://github.com/gabrielcabola/simple-shopping-cart/blob/master/example/screen.png "sreenshot")
+
 ## How to use
 
 #### Load Class
@@ -108,5 +110,5 @@ Run a simple app to demonstate how Cart works!
 ```
 /example/index.php
 ```
-![alt text](https://github.com/gabrielcabola/simple-shopping-cart/blob/master/example/screen.png "sreenshot")
+
 
